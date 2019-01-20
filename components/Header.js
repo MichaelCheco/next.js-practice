@@ -37,7 +37,7 @@ const Header = props => (
         <Link href="/"><A>Home</A></Link>
         <Link href="/about"><A>About</A></Link>
         <Link href="/contact"><A>Contact</A></Link>
-        <Link href="/about"><A>About</A></Link>
+        <Link href={props.title} as="custom"><A>Learn</A></Link>
         </Nav>
     </Div>
 )

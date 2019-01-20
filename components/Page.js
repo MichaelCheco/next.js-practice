@@ -7,7 +7,7 @@ export default class Page extends Component {
         return (
             <div>
                 <Meta />
-                <Header />
+                <Header title="learn"/>
                 {this.props.children}
             </div>
         )

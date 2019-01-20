@@ -106,7 +106,8 @@ var Header = function Header(props) {
     },
     __self: this
   }, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
+    href: props.title,
+    as: "custom",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
@@ -118,7 +119,7 @@ var Header = function Header(props) {
       lineNumber: 40
     },
     __self: this
-  }, "About"))));
+  }, "Learn"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -259,6 +260,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        title: "learn",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
