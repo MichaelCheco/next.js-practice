@@ -108,14 +108,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "nprogress");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/michaelcheco/next/components/Header.js";
 
 
 
+
+
+
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeStart = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.start();
+  console.log('on route change start triggere');
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeComplete = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+  console.log('on route change complete triggere');
+};
+
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeError = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+  console.log('on route change error triggere');
+};
+
 var Div = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__Div",
   componentId: "sc-8884q5-0"
-})(["border:2px solid blue;display:grid;grid-template-columns:1fr 8fr;"]);
+})(["display:grid;grid-template-columns:1fr 8fr;"]);
 var A = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.a.withConfig({
   displayName: "Header__A",
   componentId: "sc-8884q5-1"
@@ -123,71 +145,71 @@ var A = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.a.withConfig({
 var Nav = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Header__Nav",
   componentId: "sc-8884q5-2"
-})(["border:2px solid red;display:grid;justify-items:center;grid-column:2;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));"]);
+})(["display:grid;justify-items:center;grid-column:2;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));"]);
 
 var Header = function Header(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Div, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Nav, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(A, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 37
     },
     __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(A, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 38
     },
     __self: this
   }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
+    href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(A, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 39
     },
     __self: this
-  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Contact")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(A, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 40
     },
     __self: this
   }, "About"))));
@@ -471,6 +493,28 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("next/link");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "nprogress":
+/*!****************************!*\
+  !*** external "nprogress" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("nprogress");
 
 /***/ }),
 

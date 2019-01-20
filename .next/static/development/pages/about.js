@@ -93,7 +93,7 @@ var About = function About(props) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -118,5 +118,5 @@ module.exports = dll_b2d9fd95b535cd8bf589;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map
